@@ -1,0 +1,30 @@
+Source: latex209
+Section: tex
+Priority: optional
+Maintainer: TSUCHIYA Masatoshi <tsuchiya@namazu.org>
+Build-Depends: debhelper (>> 5.0.0)
+Standards-Version: 3.8.4
+Uploaders: Atsuhito Kohda <kohda@debian.org>
+
+Package: latex209-base
+Architecture: all
+Depends: texlive-base, texlive-latex-base, ${misc:Depends}
+Description: macro files of LaTeX 2.09 25-mar-1992 version
+ LaTeX 2.09 is obsolete. Use LaTeX 2e.
+ This package is for those who want to use old style files.
+
+Package: latex209-bin
+Architecture: all
+Depends: ${misc:Depends}, latex209-base
+Description: latex209 command for LaTeX 2.09 25-mar-1992 version
+ LaTeX 2.09 is obsolete. Use LaTeX 2e.
+ This package is for those who want to use old style files.
+
+Package: latex209-src
+Depends: ${misc:Depends}
+Suggests: tetex-base (>= 2.0.2-15) | texlive-base
+Architecture: all
+Description: source files of macros of LaTeX 2.09 25-mar-1992 version
+ LaTeX 2.09 is obsolete. Use LaTeX 2e.
+ This package is for those who want to use old style files.
+ You don't need to install this package to use latex209.

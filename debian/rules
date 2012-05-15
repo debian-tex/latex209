@@ -1,0 +1,96 @@
+#!/usr/bin/make -f
+# Made with the iad of dh_make, by Craig Small
+# Sample debian/rules that uses debhelper. GNU copyright 1997 by Joey Hess.
+# Also some stuff taken from debmake scripts, by Cristopt Lameter.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DH_OPTIONS=-i
+
+prefix = /usr
+BIN    = $(prefix)/bin
+TEXMF  = $(prefix)/share/texmf
+BASE   = $(TEXMF)/tex/latex209/base
+INI    = $(TEXMF)/tex/latex209/config
+DOC    = $(prefix)/share/doc/texmf/latex209
+SRC    = $(TEXMF)/source/latex209/base
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	dh_clean
+
+build: build-stamp
+build-stamp:
+	touch $@
+
+install-base: prefix=$(CURDIR)/debian/latex209-base/usr
+install-base: DH_OPTIONS=-platex209-base
+install-base: build
+	dh_clean
+	dh_testdir
+	dh_testroot
+	mkdir -p $(BASE)
+	mkdir -p $(INI)
+	mkdir -p $(DOC)
+	cp -p general/*	sty/* $(BASE)
+	cp -p debian/latex209.ini $(INI)
+	mv $(BASE)/latex.tex $(INI)
+	mv $(BASE)/lfonts.tex $(INI)
+	mv $(BASE)/lhyphen.tex $(INI)
+	mv $(BASE)/lplain.tex $(INI)
+	mv $(BASE)/sfonts.tex $(INI)
+	mv $(BASE)/slitex.tex $(INI)
+	mv $(BASE)/splain.tex $(INI)
+	mv $(BASE)/latex.ins $(DOC)
+	cp -p readme.* $(DOC)
+
+install-bin: prefix=$(CURDIR)/debian/latex209-bin/usr
+install-bin: DH_OPTIONS=-platex209-bin
+install-bin:
+	dh_clean
+	dh_testdir
+	dh_testroot
+	mkdir -p $(BIN)
+	cd $(BIN) && ln -s tex latex209
+
+install-src: prefix=$(CURDIR)/debian/latex209-src/usr
+install-src: DH_OPTIONS=-platex209-src
+install-src:
+	dh_clean
+	dh_testdir
+	dh_testroot
+	mkdir -p $(SRC)
+	cp -p doc/* $(SRC)
+
+install: install-base install-bin install-src
+
+# Build architecture-independent files here.
+binary-indep: install
+#	dh_testversion
+	dh_testdir
+	dh_testroot
+	dh_installdocs
+#	dh_installexamples
+#	dh_installmenu
+#	dh_installemacsen
+#	dh_installinit
+#	dh_installcron
+#	dh_installtex
+	dh_installman
+	dh_installchangelogs
+	dh_compress
+	dh_fixperms
+#	dh_suidregister
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: install
+
+binary: binary-indep
+.PHONY: build clean binary-indep binary-arch binary

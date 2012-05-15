@@ -1,0 +1,9 @@
+latex209 for DEBIAN
+-------------------
+
+LaTeX 2.09 is obsolete. Use LaTeX 2e.
+This package is for those who want to use old style files.
+
+Generic LaTeX 2.09 documentation is in /usr/share/doc/texmf/latex209
+
+ -- TSUCHIYA Masatoshi <tsuchiya@namazu.org>, Sun, 13 Apr 2003 10:47:19 +0900

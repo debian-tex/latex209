@@ -1,0 +1,19 @@
+This package was debianized by Nakahara Hayao <nakahara@mis.hiroshima-u.ac.jp>
+for Debian JP Project on Sat, 29 Nov 1997 19:33:58 +0900.
+
+Currently maintained by TSUCHIYA Masatoshi <tsuchiya@namazu.org>, who
+is sponsored by Masayuki Hatta <mhatta@debian.org>.
+
+It was downloaded from ftp.riken.go.jp (one of CTAN sites).
+URL is ftp://ftp.riken.go.jp/pub/tex-archive/obsolete/macros/latex209/distribs/latex209.tar
+
+Upstream Author: Leslie Lamport
+
+Copyright:
+
+latex.tex contains one line copyright:
+
+% Copyright (C) 1992 by Leslie Lamport
+
+There is no other explicit copyright notice, but every free tex distribution
+contains latex209. I think latex209 satisfies DFSG.
