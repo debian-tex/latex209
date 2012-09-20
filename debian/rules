@@ -46,6 +46,7 @@ install-base: build
 	mv $(BASE)/splain.tex $(INI)
 	mv $(BASE)/latex.ins $(DOC)
 	cp -p readme.* $(DOC)
+	dh_installtex
 
 install-bin: prefix=$(CURDIR)/debian/latex209-bin/usr
 install-bin: DH_OPTIONS=-platex209-bin
@@ -55,6 +56,8 @@ install-bin:
 	dh_testroot
 	mkdir -p $(BIN)
 	cd $(BIN) && ln -s tex latex209
+	dh_installtex --priority=25 formatfile=debian/latex209.cnf \
+		--flavor=format:no_links
 
 install-src: prefix=$(CURDIR)/debian/latex209-src/usr
 install-src: DH_OPTIONS=-platex209-src

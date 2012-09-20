@@ -1,0 +1,6 @@
+#
+# LaTeX 2.09
+#
+# format	engine		pattern-file	arguments
+latex209	tex		-		latex209.ini
+

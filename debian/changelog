@@ -1,3 +1,15 @@
+latex209 (25.mar.1992-12.6) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+  * fix RC bug (Closes: #669382) (create files that are not removed) by:
+    - remove all maintainer scripts
+    - create the necessary code with dh_installtex
+    - add necessary build-dep on tex-common
+  * add latex209-bin.preinst to fix up old conffile so that debconf does
+    not ask unnecessary questions
+
+ -- Norbert Preining <preining@debian.org>  Thu, 20 Sep 2012 14:24:28 +0900
+
 latex209 (25.mar.1992-12.5) unstable; urgency=low
 
   * Non-maintainer upload.
