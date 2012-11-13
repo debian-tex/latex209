@@ -1,6 +1,6 @@
-latex209 (25.mar.1992-13) UNRELEASED; urgency=low
+latex209 (25.mar.1992-13) unstable; urgency=low
 
-  * Take over maintainance into the Debian TeX Group
+  * Take over maintenance into the Debian TeX Group
   * fix RC bug (Closes: #669382) (create files that are not removed) by:
     - remove all maintainer scripts
     - create the necessary code with dh_installtex
@@ -8,7 +8,7 @@ latex209 (25.mar.1992-13) UNRELEASED; urgency=low
   * add latex209-bin.preinst to fix up old conffile so that debconf does
     not ask unnecessary questions
 
- -- Norbert Preining <preining@debian.org>  Tue, 13 Nov 2012 10:31:20 +0900
+ -- Norbert Preining <preining@debian.org>  Tue, 13 Nov 2012 14:50:17 +0900
 
 latex209 (25.mar.1992-12.5) unstable; urgency=low
 

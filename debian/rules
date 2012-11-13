@@ -22,7 +22,9 @@ clean:
 	rm -f build-stamp
 	dh_clean
 
-build: build-stamp
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
 build-stamp:
 	touch $@
 
