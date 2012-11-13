@@ -1,10 +1,10 @@
 Source: latex209
 Section: tex
 Priority: optional
-Maintainer: TSUCHIYA Masatoshi <tsuchiya@namazu.org>
+Maintainer: Debian TeX maintainers <debian-tex-maint@lists.debian.org>
 Build-Depends: debhelper (>> 5.0.0), tex-common (>= 3)
 Standards-Version: 3.8.4
-Uploaders: Atsuhito Kohda <kohda@debian.org>
+Uploaders: Atsuhito Kohda <kohda@debian.org>, Norbert Preining <preining@debian.org>
 
 Package: latex209-base
 Architecture: all

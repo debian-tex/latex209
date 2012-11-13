@@ -1,8 +1,8 @@
 This package was debianized by Nakahara Hayao <nakahara@mis.hiroshima-u.ac.jp>
 for Debian JP Project on Sat, 29 Nov 1997 19:33:58 +0900.
 
-Currently maintained by TSUCHIYA Masatoshi <tsuchiya@namazu.org>, who
-is sponsored by Masayuki Hatta <mhatta@debian.org>.
+Currently maintained by the Debian TeX Maintainer,
+former maintainer was TSUCHIYA Masatoshi <tsuchiya@namazu.org>.
 
 It was downloaded from ftp.riken.go.jp (one of CTAN sites).
 URL is ftp://ftp.riken.go.jp/pub/tex-archive/obsolete/macros/latex209/distribs/latex209.tar
