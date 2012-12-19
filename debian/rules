@@ -1,7 +1,4 @@
 #!/usr/bin/make -f
-# Made with the iad of dh_make, by Craig Small
-# Sample debian/rules that uses debhelper. GNU copyright 1997 by Joey Hess.
-# Also some stuff taken from debmake scripts, by Cristopt Lameter.
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
@@ -13,7 +10,7 @@ BIN    = $(prefix)/bin
 TEXMF  = $(prefix)/share/texmf
 BASE   = $(TEXMF)/tex/latex209/base
 INI    = $(TEXMF)/tex/latex209/config
-DOC    = $(prefix)/share/doc/texmf/latex209
+DOC    = $(TEXMF)/doc/latex209
 SRC    = $(TEXMF)/source/latex209/base
 
 clean:
@@ -74,21 +71,13 @@ install: install-base install-bin install-src
 
 # Build architecture-independent files here.
 binary-indep: install
-#	dh_testversion
 	dh_testdir
 	dh_testroot
 	dh_installdocs
-#	dh_installexamples
-#	dh_installmenu
-#	dh_installemacsen
-#	dh_installinit
-#	dh_installcron
-#	dh_installtex
 	dh_installman
 	dh_installchangelogs
 	dh_compress
 	dh_fixperms
-#	dh_suidregister
 	dh_installdeb
 	dh_gencontrol
 	dh_md5sums

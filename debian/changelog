@@ -1,3 +1,12 @@
+latex209 (25.mar.1992-14) experimental; urgency=low
+
+  * bump standards version to 3.9.4, no changes necessary
+  * add Vcs fields
+  * move doc files to /usr/share/texmf/doc
+  * build-dep on tex-common >= 4.01
+
+ -- Norbert Preining <preining@debian.org>  Wed, 19 Dec 2012 14:50:46 +0900
+
 latex209 (25.mar.1992-13) unstable; urgency=low
 
   * Take over maintenance into the Debian TeX Group
