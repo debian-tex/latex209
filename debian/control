@@ -24,7 +24,7 @@ Description: latex209 command for LaTeX 2.09 25-mar-1992 version
 
 Package: latex209-src
 Depends: ${misc:Depends}
-Suggests: tetex-base (>= 2.0.2-15) | texlive-base
+Suggests: texlive-base
 Architecture: all
 Description: source files of macros of LaTeX 2.09 25-mar-1992 version
  LaTeX 2.09 is obsolete. Use LaTeX 2e.

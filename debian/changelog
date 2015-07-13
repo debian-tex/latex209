@@ -2,8 +2,9 @@ latex209 (25.mar.1992-16) unstable; urgency=medium
 
   * remove old preinst code
   * rebuild with tex-common for new format definitions (Closes: #792039)
+  * remove deps on tetex
 
- -- Norbert Preining <preining@debian.org>  Mon, 13 Jul 2015 11:27:15 +0900
+ -- Norbert Preining <preining@debian.org>  Mon, 13 Jul 2015 11:29:12 +0900
 
 latex209 (25.mar.1992-15) unstable; urgency=low
 
