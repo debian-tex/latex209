@@ -55,8 +55,7 @@ install-bin:
 	dh_testroot
 	mkdir -p $(BIN)
 	cd $(BIN) && ln -s tex latex209
-	dh_installtex --priority=25 formatfile=debian/latex209.cnf \
-		--flavor=format:no_links
+	dh_installtex formatfile=debian/latex209.cnf --flavor=format:no_links
 
 install-src: prefix=$(CURDIR)/debian/latex209-src/usr
 install-src: DH_OPTIONS=-platex209-src
