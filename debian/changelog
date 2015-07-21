@@ -1,3 +1,10 @@
+latex209 (25.mar.1992-17) unstable; urgency=medium
+
+  * remove obsolete conffile, that was forgotten in the last upload
+    (Closes: #792039)
+
+ -- Norbert Preining <preining@debian.org>  Tue, 21 Jul 2015 09:59:16 +0900
+
 latex209 (25.mar.1992-16) unstable; urgency=medium
 
   * remove old preinst code
