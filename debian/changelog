@@ -1,3 +1,9 @@
+latex209 (25.mar.1992-18) unstable; urgency=medium
+
+  * update my email and VCS, bump standards version
+
+ -- Norbert Preining <norbert@preining.info>  Sat, 02 Mar 2019 14:12:08 +0900
+
 latex209 (25.mar.1992-17) unstable; urgency=medium
 
   * remove obsolete conffile, that was forgotten in the last upload
