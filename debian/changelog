@@ -2,6 +2,7 @@ latex209 (25.mar.1992-20) UNRELEASED; urgency=medium
 
   * Trim trailing whitespace.
   * Bump debhelper from deprecated 5 to 12.
+  * Set debhelper-compat version in Build-Depends.
 
  -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 18:46:13 +0000
 
