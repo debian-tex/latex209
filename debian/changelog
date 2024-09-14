@@ -1,4 +1,4 @@
-latex209 (25.mar.1992-22) UNRELEASED; urgency=medium
+latex209 (25.mar.1992-22) unstable; urgency=medium
 
   * Add Homepage field (Closes: #1081729).
   * Re-add VCS fields pointing to git repos on github.
@@ -8,7 +8,7 @@ latex209 (25.mar.1992-22) UNRELEASED; urgency=medium
   * Bump standards version, no changes needed.
   * Lintian fixes + overrides.
 
- -- Hilmar Preuße <hille42@debian.org>  Sat, 14 Sep 2024 15:25:42 +0200
+ -- Hilmar Preuße <hille42@debian.org>  Sat, 14 Sep 2024 18:51:35 +0200
 
 latex209 (25.mar.1992-21) unstable; urgency=medium
 
