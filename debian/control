@@ -3,8 +3,9 @@ Section: tex
 Priority: optional
 Maintainer: Debian TeX Task Force <debian-tex-maint@lists.debian.org>
 Homepage: https://ctan.org/pkg/latex209
-Build-Depends: debhelper-compat (= 12), tex-common (>= 4.01)
-Standards-Version: 4.2.1
+Build-Depends: debhelper-compat (= 13), tex-common (>= 4.01)
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
 Uploaders: Hilmar Preuße <hille42@debian.org>
 Vcs-Git: https://github.com/debian-tex/latex209.git
 Vcs-Browser: https://github.com/debian-tex/latex209
@@ -21,11 +22,12 @@ Architecture: all
 Depends: ${misc:Depends}, latex209-base
 Description: latex209 command for LaTeX 2.09 25-mar-1992 version
  LaTeX 2.09 is obsolete. Use LaTeX 2e.
- This package is for those who want to use old style files.
+ This package provides the latex209 binary.
 
 Package: latex209-src
 Depends: ${misc:Depends}
 Suggests: texlive-base
+Multi-Arch: foreign
 Architecture: all
 Description: source files of macros of LaTeX 2.09 25-mar-1992 version
  LaTeX 2.09 is obsolete. Use LaTeX 2e.

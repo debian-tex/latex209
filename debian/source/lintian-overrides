@@ -1,1 +1,6 @@
+# Package is unmaintained in upstream.
 latex209 source: debian-watch-file-is-missing
+latex209 source: maintainer-manual-page [debian/latex209.1]
+latex209 source: upstream-metadata-file-is-missing
+# Don't put too much energy into a package, which is rather obsolete.
+latex209 source: no-dh-sequencer
