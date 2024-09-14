@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian TeX Task Force <debian-tex-maint@lists.debian.org>
 Build-Depends: debhelper-compat (= 12), tex-common (>= 4.01)
 Standards-Version: 4.2.1
-Uploaders: Norbert Preining <norbert@preining.info>
+Uploaders: Hilmar Preuße <hille42@debian.org>
 Vcs-Git: https://github.com/debian-tex/latex209.git
 Vcs-Browser: https://github.com/debian-tex/latex209
 
