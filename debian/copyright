@@ -1,19 +1,49 @@
-This package was debianized by Nakahara Hayao <nakahara@mis.hiroshima-u.ac.jp>
-for Debian JP Project on Sat, 29 Nov 1997 19:33:58 +0900.
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: ftp://ftp.riken.go.jp/pub/tex-archive/obsolete/macros/latex209/distribs/latex209.tar
 
-Currently maintained by the Debian TeX Maintainer,
-former maintainer was TSUCHIYA Masatoshi <tsuchiya@namazu.org>.
+Files:
+ *
+Copyright: 1985 - 1992, Leslie Lamport
+	1991, Rainer Schoepf
+License: PD
 
-It was downloaded from ftp.riken.go.jp (one of CTAN sites).
-URL is ftp://ftp.riken.go.jp/pub/tex-archive/obsolete/macros/latex209/distribs/latex209.tar
-
-Upstream Author: Leslie Lamport
-
+Files:
+ debian/*
 Copyright:
+ 1997 - 1999 Hayao Nakahara <nakahara@mis.hiroshima-u.ac.jp>
+ 2003 - 2006 TSUCHIYA Masatoshi <tsuchiya@namazu.org>
+ 2008 Masayuki Hatta (mhatta) <mhatta@debian.org>
+ 2010 Hideki Yamane <henrich@debian.org>
+ 2012 Atsuhito KOHDA <kohda@debian.org>
+ 2012 - 2020 Norbert Preining <norbert@preining.info>
+ 2024 Hilmar Preuße <hille42@debian.org>
+License: GPL-2+
 
-latex.tex contains one line copyright:
+License: PD
+ Public domain software, produced as part of work done by the
+ United States Government & not subject to copyright in the US.
+ .
+ To the extent that any copyright protections may be considered to be held by
+ the authors of this software in some jurisdiction outside the United States,
+ the authors hereby waive those copyright protections and dedicate the
+ software to the public domain.  Thus, this license may be considered
+ equivalent to Creative Commons 0: ”No Rights Reserved”.
+ .
+ Note that, according to Gnu.org, public domain is compatible with GPL.
 
-% Copyright (C) 1992 by Leslie Lamport
-
-There is no other explicit copyright notice, but every free tex distribution
-contains latex209. I think latex209 satisfies DFSG.
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this package; if not, see &lt;https://www.gnu.org/licenses/&gt;.
+Comment:
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file '/usr/share/common-licenses/GPL-2'.
